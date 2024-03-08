@@ -1,29 +1,13 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const dots = document.getElementsByClassName("dots");
+const quotes = document.getElementsByClassName("quote");
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function () {
+    for (let j = 0; j < dots.length; j++) {
+      dots[j].classList.remove("active-dot");
+      quotes[j].classList.remove("active-quote");
+    }
+    this.classList.add("active-dot");
+    quotes[i].classList.add("active-quote");
+  });
 }
