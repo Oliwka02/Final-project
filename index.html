@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Freaks</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
     <link
@@ -14,28 +15,37 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>BookFreaks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="node_modules/bootstrap-icons/icons/book.svg"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
-
   </head>
 
   <body>
- 
     <header>
-      <nav class="navbar navbar-expand-lg" id="nav">
-        <div
-          class="iconsContainer"
-          style="margin-left: 3px; margin-right: 200px"
+      <nav
+        class="navbar navbar-expand-lg montserrat-font justify-content-between px-4"
+        id="nav"
+      >
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-book" id="book"></i>Book Freaks</a
         >
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
 
-        </div>
-        <a class="navbar-brand" href="#"><i class="bi bi-book" id="book"></i>   Book Freaks </a>
-        <div class="collapse navbar-collapse flex-row" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -51,63 +61,94 @@
           </ul>
         </div>
       </nav>
-      <div id="luxy">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-              <img src="" alt="Book" border="0">
-            </div>
+    </header>
+
+    <div id="banner">
+      <img src="img/banner.jpg" alt="Book" />
+    </div>
+
+    <div class="content">
+      <div class="society-rules py-5 px-5">
+        <h2 class="text-center py-3">Society rules</h2>
+
+        <p>
+          Welcome to Book Freaks, where friendship, reading, and learning
+          converge in the realm of literary exploration. Our club is a haven for
+          avid readers seeking camaraderie and intellectual growth. Our society
+          thrives on three fundamental rules:
+        </p>
+
+        <div class="row py-5">
+          <div class="col">
+            <h6>Respectful Discourse</h6>
+            <p>
+              Engage in discussions with an open mind, embracing diverse
+              perspectives. We value the exchange of ideas, fostering an
+              environment where every voice is heard and respected.
+            </p>
+          </div>
+          <div class="col">
+            <h6>Embrace Diversity in Reading</h6>
+            <p>
+              Celebrate a variety of genres, authors, and perspectives. By
+              diversifying our literary choices, we enrich our understanding of
+              the world and connect with each other through the universal
+              language of storytelling.
+            </p>
+          </div>
+          <div class="col">
+            <h6>Commitment to Personal Growth</h6>
+            <p>
+              Encourage continuous learning and self-improvement through
+              literature. Each book is an opportunity to expand our horizons,
+              challenge our assumptions, and cultivate a passion for lifelong
+              learning.
+            </p>
           </div>
         </div>
       </div>
-    </header>
 
-   
-    <div class="society-rules">
-      <h2>Society rules</h2>
+      <div class="border-bottom opacity-25"></div>
 
-     <div class="row">
-        <div class="column"> <p class="rule">Rule 1 <br> <br>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p> </div>
-       <div class="column"> <p class="rule"> Rule 2 <br> <br>
-       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      </p></div>
-      <div class="column"> <p class="rule"> Rule 3 <br> <br>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-     </p> </div></div>
+      <div class="quotes-of-the-month py-5 px-5">
+        <h2 class="text-center py-3">Quotes of the month</h2>
+        <div class="slideshow-container">
+          <div class="quote active-quote">
+            <q
+              >I love you the more in that I believe you had liked me for my own
+              sake and for nothing else</q
+            >
+            <p class="author">- John Keats</p>
+          </div>
 
-    
-    <h3> Quotes of the month </h3>
-      <div class="slideshow-container">
-        <div class="mySlides">
-          <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-          <p class="author">- John Keats</p>
+          <div class="quote">
+            <q
+              >But man is not made for defeat. A man can be destroyed but not
+              defeated.</q
+            >
+            <p class="author">- Ernest Hemingway</p>
+          </div>
+
+          <div class="quote">
+            <q
+              >I have not failed. I've just found 10,000 ways that won't
+              work.</q
+            >
+            <p class="author">- Thomas A. Edison</p>
+          </div>
+
+          <div style="text-align: center">
+            <span class="dots active-dot"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+          </div>
         </div>
-
-        <div class="mySlides">
-          <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-          <p class="author">- Ernest Hemingway</p>
-        </div>
-      
-        <div class="mySlides">
-          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-          <p class="author">- Thomas A. Edison</p>
-        </div>
-
-
-    <div style="text-align: center">
-      <span class="dots" onclick="currentSlide(1)"></span>
-      <span class="dots" onclick="currentSlide(2)"></span>
-      <span class="dots" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-
-
     <footer>
-      <div class="bttmnav">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" >Home</a>
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link">About</a>
@@ -119,21 +160,15 @@
           <a href="contact.html" class="nav-link">Contact</a>
         </li>
       </ul>
-      </div>
-      <div class="Inc">© 2024 Bookfreaks Community, Inc</div>
-
-      <script src="main.js"></script>
+      <div class="inc">© 2024 Bookfreaks Community, Inc</div>
     </footer>
 
+    <script src="main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
