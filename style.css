@@ -1,3 +1,4 @@
+
 :root {
   --bs-border-color: #3c1112;
 }
@@ -41,8 +42,6 @@
   border-right: 1px solid #b3857d;
 }
 }
-
-
 
 #nav {
   background-color: #280003;
@@ -128,6 +127,63 @@ body {
 
 .active-dot {
   opacity: 1;
+}
+
+.Inc-contact {
+  background-color: #f7f6f6;
+  color: #3c1112;
+  padding: 60px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.Address {
+  background-color: #f7f6f6;
+  color: #3c1112;
+  padding: 0px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.contact {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Source Sans 3;
+  font: ExtraLight 200 Italic;
+  width: 480px;
+  top: 73px;
+  height: 124px;
+  left: 247px;
+  margin-left: 100px;
+}
+
+.contactInfo {
+  font-size: 20px;
+  font: Montserrat;
+  margin-left: 100px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.box {
+  flex: 1 1 15px; /*  Stretching: */
+  flex: 0 1 15px; /*  No stretching: */
+  margin: 5px;
+  place-items: center;
+  margin-left: 10px;
+  padding-right: 0px;
+
 }
 
 footer {
