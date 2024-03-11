@@ -17,7 +17,7 @@
 
 .custom-toggler.navbar-toggler {
   border-color: #b3857d;
-} 
+}
 
 .nav-item.active > .nav-link {
   text-decoration: underline;
@@ -96,6 +96,109 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 100px 0 100px;
+}
+
+.my-header {
+    background-color: #ffffff;
+    color: #3c1112;
+    /* max-width: 1500px; */
+    font-size: 0.75rem;
+    padding: 30px;
+    /* padding-left: 100px; */
+    text-align: center;
+}
+
+.story-description {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+    text-align: center;
+}
+
+.thumb-side {
+    background: 50% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 300px;
+    height: 300px;
+}
+
+.thumb-middle {
+    background: 50% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 250px;
+    height: 250px;
+}
+
+.thumb-side:hover {
+    opacity: 0.5;
+}
+
+.thumb-middle:hover {
+    opacity: 0.5;
+}
+
+slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+.Back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.Back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info {
+    color: #e3e3e3;
+    font-size: 1.5rem;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.dots {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    margin-bottom: 80px;
+    background: linear-gradient(92.18deg, #3c1112 -25.78%, #3c1112 123.02%);
+    opacity: 0.3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+    background: linear-gradient(92.18deg, #3c1112 -25.78%, #3c1112 123.02%);
+    opacity: 1;
 }
 
 .quote {
