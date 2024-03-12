@@ -30,7 +30,7 @@
         class="navbar navbar-expand-lg montserrat-font justify-content-between px-4"
         id="nav"
       >
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><i class="bi bi-book" id="book"></i>Book Freaks</a
         >
         <button
@@ -44,7 +44,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
@@ -53,7 +56,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item active">
-            <a class="nav-link" href="joinUs.html">Join Us</a>
+              <a class="nav-link" href="joinUs.html">Join Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -62,7 +65,79 @@
         </div>
       </nav>
     </header>
-
+    <div id="join-us-main">
+      <div id="left-section">
+        <form id="join-us-form">
+          <legend>Sign up</legend>
+          <small>Send us a message we'll respond within 24 hrs</small>
+          <div id="form-section">
+            <div id="form-inner-left">
+              <div class="form-group">
+                <label>Full name </label>
+                <input
+                  placeholder="Type full name here"
+                  class="block-input"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input
+                  placeholder="phone number"
+                  class="block-input"
+                  type="tel"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Books read last year</label>
+                <select class="block-input" required>
+                  <option>Select</option>
+                  <option value="None">None</option>
+                  <option value="0-5">0-5</option>
+                  <option value="6-10">6-10</option>
+                  <option value="11-15">11-15</option>
+                  <option value="more than 15">more than 15</option>
+                </select>
+              </div>
+            </div>
+            <div id="form-inner-right">
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  placeholder="Type email here"
+                  class="block-input"
+                  type="email"
+                />
+              </div>
+              <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="female" />&nbsp;female
+                <input type="radio" name="gender" value="male" />&nbsp;male
+                <input type="radio" name="gender" value="other" />&nbsp;other
+              </div>
+              <div class="form-group" id="checkbox-section">
+                <label>How did you find us?</label>
+                <input type="checkbox" value="Friends" />&nbsp;Friends<br />
+                <input type="checkbox" value="Our Website" />&nbsp;Our
+                Website<br />
+                <input type="checkbox" value="Other" />&nbsp;Other<br />
+              </div>
+            </div>
+          </div>
+          <textarea class="block-input" id="join-textarea">
+ Why do you want to join our society?</textarea
+          >
+          <div id="submit-button">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+      <div id="right-section">
+        <img src="./img/background.png" />
+      </div>
+    </div>
     <footer>
       <ul class="navbar-nav justify-content-center">
         <li class="nav-item">
